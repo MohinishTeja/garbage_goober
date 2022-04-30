@@ -890,6 +890,8 @@ const address4 = '0xBA59040A51ae8a15008e219b713b228E4ecb9587';  // MATIC DL
 const address5 = '0x4b68dA8FF100F416aB48cC3A6602709D1cD8fD55'; //MATIC TESTNET RESULT FINAL
 const address6 = '0x51c7D1c8B9DD22b1A4434C578a7aa29beA393A13'; //BSC TESTNET RESULT FINAL
 const address7 = '0x8C08810c587F162F5b6284560FC921dDE2e4F414'; //Ropsten TESTNET RESULT FINAL
+
+const address8 = '0x3E73cB65D1480B45Ab67cDe68bA9dDb71d89CfEE'; //Velas VLX
 const abi =[
   {
     "constant": true,
@@ -985,7 +987,7 @@ async function pay() {
 const portis = new Portis('8327b253-e459-44fa-94bd-c9cc457bf5fb', 'rinkeby');
 const web3 = new Web3(portis.provider);
 */
-    contract = new web3.eth.Contract(abi,address7)
+    contract = new web3.eth.Contract(abi,address8)
 
 
         var paymentAddress = document.getElementById("address").value;

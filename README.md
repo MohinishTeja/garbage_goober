@@ -6,4 +6,4 @@
 3.  in Command line: `export FLASK_APP=waste_app.py`
 4.  Try: `printenv FLASK_APP`
 5.  Output: `waste_app.py`
-6. flask run
+6. `flask run`

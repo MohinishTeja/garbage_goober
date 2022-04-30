@@ -16,19 +16,6 @@ classes = { 0:'cardboard',
             4:'plastic',
             5:'trash' }
 
-"""
-def image_processing(img):
-    model = load_model('./model/resnet.pt')
-    data=[]
-    image = Image.open(img)
-    image = image.resize((256,256))
-    data.append(np.array(image)/255.0)
-    X_test=np.array(data)
-    Y_pred = model.predict(X_test)
-    return Y_pred
-"""
-
-
 def image_processing(img):
     model = load_model('./model/model2 (1).h5')
     data=[]
@@ -36,9 +23,15 @@ def image_processing(img):
     image = image.resize((300,300))
     data.append(np.array(image)/255.0)
     X_test=np.array(data)
-    Y_pred = model.predict(X_test)
-    return Y_pred
-
+    print('X 0 FROM AI', X_test)
+    try:
+        Y_pred = model.predict(X_test)
+        print('Y FROM AI',  Y_pred)
+        return Y_pred
+    except:
+        Y_pred = 'trash'
+        print("An exception occurred")
+        return Y_pred
 
 @app.route('/')
 def index():
@@ -52,13 +45,17 @@ def upload():
         file_path = secure_filename(f.filename)
         f.save(file_path)
 
-        # Make prediction
+        # Gets prediction
         result = image_processing(file_path)
-        
         predicted_class = classes[np.argmax(result[0])]
-        result = predicted_class
-        os.remove(file_path)
-        return result
+        result2 = predicted_class
+        if "trash" not in result2:
+            os.remove(file_path)
+            # Returns Class
+            return result2
+        else:
+            print('Bad Image!')
+            return result2  
     return None
 
 if __name__ == '__main__':

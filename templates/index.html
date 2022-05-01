@@ -976,6 +976,12 @@ function pay1(){
 
   
 }
+
+function pop(){
+
+  alert("txn successfull. Look at line 982 of index.html to build Popup");
+
+}
 async function pay() {
 
     var web3=new Web3(window.ethereum)
@@ -1021,7 +1027,18 @@ var qa;
         console.log(qa);
         console.log(paymentAddress);
         console.log(weight);
-        contract.methods.payout(paymentAddress,weight,qa).send({from:accounts[0]}) 
+        contract.methods.payout(paymentAddress,weight,qa).send({
+
+          from:accounts[0]
+
+
+        })
+
+        .on('confirmation',function(confirmationNumber,receipt){
+        pop();
+        })
+
+ 
 
 
                 

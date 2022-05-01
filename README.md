@@ -21,9 +21,9 @@
     <a href="https://github.com/MohinishTeja/dragon_hacks"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#">Video Demo</a>
+    <a href="https://youtu.be/-6vDBPJc1Tk">Video Demo</a>
     ·
-    <a href="#">View DApp</a>
+    <a href="garbagegoober.tech">View DApp</a>
   </p>
 </p>
 
@@ -35,8 +35,8 @@
 * [Challenges](#d)
 * [Accomplishments](#e)
 # <a name="team-members"></a>Team Members
-* P.Mohinish Teja - <>
-* Jonathan Gan - <>
+* P.Mohinish Teja - <marvelmohinish99@gmail.com>
+* Jonathan Gan - <Jonathangan@usf.edu>
 * 
 
 
@@ -44,12 +44,10 @@
 &nbsp; &nbsp; &nbsp; &nbsp;Landfills are one of the largest producers of Methane and 
 house gases. Even power generation from Waste produces CO2. Why is it a big problem? It is because of no proper way in dumping. All kind of wastes are dumped which leads to half degrading and pollution of local resources.Dumping of huge amount of waste also causes soil contamination,Water contamination,Air contamination and causes harm for marine and animal life. 
 
-&nbsp; &nbsp; &nbsp; &nbsp;What if we segregate biodegradable wastes and recycle other ones? This can drastically cut down new production of plastics and safe degradation of all other kinds of wastes. But how do we **motivate** people to dump according to our waste management system? This is where Garbage Goober Rewards comes into action. Garbage Goober Rewards is a Decentralized Application that automatically rewards people who dump waste categorically.
+People get incentives for doing the right thing! These later can be regular habits and greatly saves atmosphere thus promoting sustainability. Rewards distributed are through Cryptocurrency from a decentralized application. Garbage thus collected categorically can be **Reused, Recycled** which can fund back the reward distribution process thus making this a circular economy without any burden on reward paying organization.
 
+This will be a great and efficient **Learning experience for Users** as they can see the **amount of Carbon they offset** by disposing waste categorically thus habituating them psychologically to understand and follow green practices in every possible way in their day to day life.
 
- <p align="center">
- <img src="templates/Screenshot (1407).png" height="60%" width="60%">
-  </p>
   
   
 # <a name="b"></a> What it does
@@ -57,13 +55,11 @@ house gases. Even power generation from Waste produces CO2. Why is it a big prob
   - AI/ML      - To determine the type of waste
   - Blockchain - To distribute rewards
 
-&nbsp; &nbsp; &nbsp; &nbsp;People should get rewards instantly and should be of some value. We can't provide much rewards in traditional currencies. So we have used Crypto Tokens as rewards. Value of these tokens are volatile and may be of higher value in future. Government can provide regular services like Registrations, application fee, fine payment using these tokens. This can definitely drive people to use this DApp(Decentralized application).
-  - Velas - Layer-2 network which is fast and scalable for Garbage Goober Rewards
-  - IPFS    - To store dataset of images for CNN model
+These cover almost all areas of the world without any technological or logistical barriers like access to no computers. Mobile App is thus built to cater people who don't have access to better hardware.
 
-<p align="center">
- <img src="templates/Screenshot (1408).png" height="60%" width="60%">
- </p>
+We have started out with a flask app for classifying types of waste. Later we decided to implement a better front end experience and Web3 functionality that would allow user to get paid using Web3. We have used Velas network which is based on Solana. This blockchain is so energy neutral that most of it is powered through alternate energy resources. Single transaction uses only 1/20th of power used by a LED bulb per minute thus not putting any more burden/polluting the environment.
+
+Latest technologies like Deep Learning for Waste classification, Blockchain for Reward payout and mobile,web applications ensure the application rewards to only correct waste disposals.
   
 
 # <a name="c"></a> How we built it
@@ -75,21 +71,14 @@ house gases. Even power generation from Waste produces CO2. Why is it a big prob
 &nbsp; &nbsp; &nbsp; &nbsp;Initially we thought of deploying this application using Rinkeby test network of Ethereum and it lead to higher gas fee and slower transactions. Then we switched to Solana based solution like Velas. Though it was easy to switch we encountered difficulties in integrating it with Frontend. After further reading Web3.JS  and velas docs we found the solution. Further we realized that as this DApp grows we'll be having lot of data to handle. IPFS came to our rescue. We've used Fleek platform to publish DApp on IPFS. Image classification and other predicting models need Multimedia data to predict what kind of waste and how much of it is deposited. IPFS helped us handle these situations.
 
 # <a name="e"></a> Accomplishments that we're proud of
-&nbsp; &nbsp; &nbsp; &nbsp;We are proud of the entire project development and its execution as per timeline set. Initially we did not think of scalability issues with Data as users grow for this DApp. So, we went through some resources and successfully published using it. We are proud of learning about new tech and using it in a very short period of time.
-
-
- <p align="center">
- <img src="#" height="60%" width="60%">
-  </p>
+- Multi-chain contract
+- MVP Mobile App
+- Web App deployed in a fast and low fee blockchain network.
   
 ## What we learned
-&nbsp; &nbsp; &nbsp; &nbsp;We learned about Decentralization and its benefits. Central authority can never be fool proof and projects should inculcate some kind of decentralization or distribution. We learned about Layer-2 solutions for Ethereum and its uses. Inter Planetary File System deployment taught us a lot. 
+- To work cohesively even though we're both remote.
+- Manage work load equally even though both of us had different skill sets.
+- Lot of knowledge on CO2 emissions and rates at which it is increasing and sources of it.
 ## What's next for Garbage Goober Reward
 &nbsp; &nbsp; &nbsp; &nbsp;Right now user manually enters weight of waste. Type of waste is classified by uploading a picture of the waste. This is not the right way for production level implementation. Users will take advantage of this easily. We are thinking of using OpenCV to detect and determine type of waste in real time without any human intervention. This cannot be done due to time constraints for the hackathon. As these features will be integrated data plays important role and we will be using OpenCV & IPFS efficiently in upcoming versions.
-<p align="center">
- <img src="#" height="60%" width="60%">
-  </p>
-  <p align="center">
- <img src="#" height="60%" width="60%">
-  </p>
   

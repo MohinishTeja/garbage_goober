@@ -38,10 +38,17 @@ def index():
     return render_template('index.html')
 
 @app.route('/predict', methods=['GET', 'POST'])
-def upload():
+def upload(): 
     if request.method == 'POST':
         # Get the file from post request
+        # data = request.files['file']
+        # print('IMAGE DATA FROM FILE: ', data)
+        # print('IMAGE DATA FROM FORM: ', request.form.get('file'))
+        # f = request.form
+        # f = request.files['file']
         f = request.files['file']
+        print('IMAGE READ FROM: ', f)
+
         file_path = secure_filename(f.filename)
         f.save(file_path)
 
@@ -49,14 +56,14 @@ def upload():
         result = image_processing(file_path)
         predicted_class = classes[np.argmax(result[0])]
         result2 = predicted_class
+        print('Image reading: ', result2)
+         # Returns Class
         if "trash" not in result2:
             os.remove(file_path)
-            # Returns Class
             return result2
         else:
             print('Bad Image!')
             return result2  
-    return None
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -21,9 +21,9 @@
     <a href="https://github.com/MohinishTeja/dragon_hacks"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://youtu.be/-6vDBPJc1Tk">Video Demo</a>
+    <a href="https://youtu.be/kkXdOf3BB2s">Video Demo</a>
     ·
-    <a href="garbagegoober.tech">View DApp</a>
+    <a href="https://mohinishteja.github.io/garbage_goober/">View DApp</a>
   </p>
 </p>
 

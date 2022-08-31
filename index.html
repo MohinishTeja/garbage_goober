@@ -817,7 +817,77 @@ h3{
 }
 
 
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
 </style>
 
 
@@ -906,8 +976,12 @@ h3{
   <!-- Button HTML (to Trigger Modal) -->
   <a href="#myModal" id="ax" class="trigger-btn" data-toggle="modal">Click to Open Confirm Modal</a>
 </div>
+<div class="box">
+  <a class="button" id="b1" href="#popup1">Let me Pop up</a>
+</div>
 
 <!-- Modal HTML -->
+<!--
 <div id="myModal" class="modal fade">
   <div class="modal-dialog modal-confirm">
     <div class="modal-content">
@@ -928,7 +1002,18 @@ h3{
     </div>
   </div>
 </div>     
+-->
 
+
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>WebApp not deployed</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      This is a Flask application requiring Python to run. Currently this is only static SEE ONLY web application. Watch Video demo for all details. Full Web App deployed through Heroku will be available soon.
+    </div>
+  </div>
+</div>
 
   </div>
 
@@ -968,7 +1053,7 @@ h3{
   </div>
      
 <script>
-
+document.getElementById("b1").click();
 /*
 import Portis from './@portis/web3';
 import Web3 from '/web3';

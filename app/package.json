@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "twrnc": "*",
+    "clarifai": "*",
+    "expo-camera": "~12.1.1",
+    "nft.storage": "*",
+    "expo-constants": "~13.0.2",
+    "@expo/vector-icons": "^12.0.0",
+    "react-native-paper": "4.9.2"
+  }
+}

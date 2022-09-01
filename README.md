@@ -122,3 +122,23 @@ Latest technologies like Deep Learning for Waste classification, Blockchain for 
 &nbsp; &nbsp; &nbsp; &nbsp;NFT marketplace will be setup and we'll implement features like access to application only if having NFT, limited NFT items release etc., for generating revenue to distribute rewards. Overall this shall become a circular economy where NFT's can be used for trading and recognition and also helps fund reward distribution programme which brings lot of potential for utility to our NFT and project.
   
 ## Gallery
+
+<p align="center">
+<img src="img/Screenshot (1469).png" width="60%" style="margin-left:10%;">
+</p>
+
+<p align="center">
+<img src="img/Screenshot (1472).png" width="60%" style="margin-left:10%;">
+</p>
+
+<p align="center">
+<img src="img/Screenshot (1475).png" width="60%" style="margin-left:10%;">
+</p>
+
+
+<p align="center">
+<img src="img/Screenshot (44).png" width="60%" style="margin-left:10%;">
+</p>
+<p align="center">
+<img src="img/Screenshot (45).png" width="60%" style="margin-left:10%;">
+</p>

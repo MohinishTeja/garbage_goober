@@ -137,6 +137,9 @@ Latest technologies like Deep Learning for Waste classification, Blockchain for 
 
 
 <p align="center">
+<img src="img/Screenshot (42).png" width="60%" style="margin-left:10%;">
+</p>
+<p align="center">
 <img src="img/Screenshot (44).png" width="60%" style="margin-left:10%;">
 </p>
 <p align="center">

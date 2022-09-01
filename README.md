@@ -70,7 +70,7 @@ These cover almost all areas of the world without any technological or logistica
 
 We have started out with a flask app for classifying types of waste. Later we decided to implement a better front end experience and Web3 functionality that would allow user to get paid using Web3. We have used Polygon network which is L2 network based on Ethereum. This blockchain is so energy neutral that most of it is powered through alternate energy resources. Single transaction uses only 1/20th of power used by a LED bulb per minute thus not putting any more burden/polluting the environment.
 
-**Mobile App** is also built which has the ability to capture waste images and identify just like the webapp but with additional feature of **Minting NFT**. Further implementation requires users to first have NFT's to participate in Garbage Goober which can be bought from marketplace similar to the model of Stepn. NFT's are minted based on input and can be sold in marketplace. **NFT.storage** is currently used to store the NFT's minted.
+**Mobile App** is also built which has the ability to capture waste images and identify just like the webapp but with additional feature of **Minting NFT**. Further implementation requires users to first have NFT's to participate in Garbage Goober which can be bought from marketplace similar to the model of Stepn. NFT's are minted based on input and can be sold in marketplace. **NFT.storage** is currently used to store the NFT's minted which ensures permanent storage of NFT's in Filecoin network.
 
 
 Latest technologies like Deep Learning for Waste classification, Blockchain for Reward payout and mobile,web applications ensure the application rewards to only correct waste disposals.
@@ -100,6 +100,7 @@ Latest technologies like Deep Learning for Waste classification, Blockchain for 
   - NFT.storage  - To store the minted NFT's
   - Flask        - To integrate CNN model to Frontend
   - Web3.js      - To connect Smart Contracts with Frontend
+  - Filecoin     - Ensures NFT data is stored permanently
   
   
   &nbsp; &nbsp; &nbsp; &nbsp;Mobile Application is built using React native framework and deployed on Expo. Mobile app has the capability to mint NFT's using NFT.storage. **Tokenomics** include sale of these NFT's and access to application only for users with NFT initially to support the reward distribution program.

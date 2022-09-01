@@ -74,20 +74,18 @@ We have started out with a flask app for classifying types of waste. Later we de
 
 
 Latest technologies like Deep Learning for Waste classification, Blockchain for Reward payout and mobile,web applications ensure the application rewards to only correct waste disposals.
+  <h1>Web App</h1>
+<p align="center">
   
-<p align="center">
-<img src="img/Screenshot (1470).png" width="60%" style="margin-left:10%;">
-</p>
-<p align="center">
-<img src="img/Screenshot (1473).png" width="60%" style="margin-left:10%;">
-</p>
+<img src="img/Screenshot (1470).png" width="45%" style="margin-left:10%;">
 
-<p align="center">
-<img src="img/Screenshot (40).png" width="60%" style="margin-left:10%;">
+<img src="img/Screenshot (1473).png" width="45%" style="margin-left:10%;">
 </p>
-
+<h1>Mobile App</h1>
 <p align="center">
-<img src="img/Screenshot (42).png" width="60%" style="margin-left:10%;">
+<img src="img/Screenshot (40).png" width="45%" style="margin-left:10%;">
+
+<img src="img/Screenshot (42).png" width="45%" style="margin-left:10%;">
 </p>
 <p align="center">
 <img src="img/Screenshot (43).png" width="60%" style="margin-left:10%;">
@@ -96,23 +94,28 @@ Latest technologies like Deep Learning for Waste classification, Blockchain for 
 &nbsp; &nbsp; &nbsp; &nbsp;As you can see from the images above, Mobile app has classified my laptop as Computer and minted NFT using NFT.storage. <a href="https://bafybeieejjzt6f7qtl7l6ac55qpwptaczufo5m6wm6xhhc7j2gvzpfhotq.ipfs.nftstorage.link">Click here</a> to view that file.
 # <a name="c"></a> How we built it
 &nbsp; &nbsp; &nbsp; &nbsp;We have built this DApp as Web App. Entire frontend is built using HTML,CSS,JS. Smart contracts are written using Solidity and deployed on Polygon network. Polygon network helps us in Reduced gas fee and faster transactions. Frontend and Smart contracts are connected using Web3.JS. Convoultional Neural Network is used for determining type of waste instantly with just a picture. It has accuracy of 83% at present with dataset of 2,200+ images in IPFS. This entire DApp is published through IPFS using Fleek platform. IPFS helps us in maintaining large sets of Data with added benefit of no redundancy.
-  - React Native - Mobile App framework
-  - NFT.storage  - To store the minted NFT's
-  - Flask        - To integrate CNN model to Frontend
-  - Web3.js      - To connect Smart Contracts with Frontend
-  - Filecoin     - Ensures NFT data is stored permanently
   
   
+| Technology                                 | Uses                                                               |
+| ------------------------------------------ | ------------------------------------------------------------------ |
+| 1. NFT.storage                             | To store the minted NFT's                                          |
+| 2. IPFS                                    | Storage for new images and dataset for Deep Learning model         |
+| 3. React Native                            | Mobile App framework                                               |
+| 4. Flask                                   | To integrate CNN model to Frontend                                 |
+| 5. Filecoin                                | Used in NFT.storage as permanent stoarge platform for minted NFT's |
+
   &nbsp; &nbsp; &nbsp; &nbsp;Mobile Application is built using React native framework and deployed on Expo. Mobile app has the capability to mint NFT's using NFT.storage. **Tokenomics** include sale of these NFT's and access to application only for users with NFT initially to support the reward distribution program.
 
 # <a name="d"></a> Challenges we ran into
-&nbsp; &nbsp; &nbsp; &nbsp;Initially we thought of deploying this application using Rinkeby test network of Ethereum and it lead to higher gas fee and slower transactions. Then we switched to L2 based solution like Polygon. Though it was easy to switch we encountered difficulties in integrating it with Frontend. After further reading Web3.JS  and Polygon docs we found the solution. Further we realized that as this DApp grows we'll be having lot of data to handle. IPFS came to our rescue. We've used Fleek platform to publish DApp on IPFS. Image classification and other predicting models need Multimedia data to predict what kind of waste and how much of it is deposited. IPFS helped us handle these situations. NFT's minted are stored using NFT.storage.
+&nbsp; &nbsp; &nbsp; &nbsp;Initially we thought of deploying this application using Rinkeby test network of Ethereum and it lead to higher gas fee and slower transactions. Then we switched to L2 based solution like Polygon. Though it was easy to switch we encountered difficulties in integrating it with Frontend. After further reading Web3.JS  and Polygon docs we found the solution. 
+
+&nbsp; &nbsp; &nbsp; &nbsp;Further we realized that as this DApp grows we'll be having lot of data to handle. IPFS came to our rescue. We've used Fleek platform to publish DApp on IPFS. Image classification and other predicting models need Multimedia data to predict what kind of waste and how much of it is deposited. IPFS helped us handle these situations. NFT's minted are stored using NFT.storage.
 
 # <a name="e"></a> Accomplishments that we're proud of
-- Multi-chain contract
+- Utilised NFT.storage for NFT storage.
 - MVP Mobile App
 - Web App deployed in a fast and low fee blockchain network.
-- Utilised NFT.storage for NFT storage.
+- Multi-chain contract
 ## What we learned
 - To work cohesively even though we're both remote.
 - Manage work load equally even though both of us had different skill sets.

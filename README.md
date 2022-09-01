@@ -93,30 +93,32 @@ Latest technologies like Deep Learning for Waste classification, Blockchain for 
 <img src="img/Screenshot (43).png" width="60%" style="margin-left:10%;">
 </p>
 
-
+&nbsp; &nbsp; &nbsp; &nbsp;As you can see from the images above, Mobile app has classified my laptop as Computer and minted NFT using NFT.storage. <a href="https://bafybeieejjzt6f7qtl7l6ac55qpwptaczufo5m6wm6xhhc7j2gvzpfhotq.ipfs.nftstorage.link">Click here</a> to view that file.
 # <a name="c"></a> How we built it
-&nbsp; &nbsp; &nbsp; &nbsp;We have built this DApp as Web App. Entire frontend is built using HTML,CSS,JS. Smart contracts are written using Solidity and deployed on Polygon network. Polygon network helps us in Reduced gas fee and faster transactions. Frontend and Smart contracts are connected using Web3.JS. Convoultional Neural Network is used for determining type of waste instantly with just a picture. It has accuracy of 83% at present with dataset of 2,200+ images in IPFS. This entire DApp is published through IPFS using Fleek platform. IPFS helps us in maintaining large sets of Data with more security features like no redundancy.
+&nbsp; &nbsp; &nbsp; &nbsp;We have built this DApp as Web App. Entire frontend is built using HTML,CSS,JS. Smart contracts are written using Solidity and deployed on Polygon network. Polygon network helps us in Reduced gas fee and faster transactions. Frontend and Smart contracts are connected using Web3.JS. Convoultional Neural Network is used for determining type of waste instantly with just a picture. It has accuracy of 83% at present with dataset of 2,200+ images in IPFS. This entire DApp is published through IPFS using Fleek platform. IPFS helps us in maintaining large sets of Data with added benefit of no redundancy.
   - React Native - Mobile App framework
   - NFT.storage  - To store the minted NFT's
   - Flask        - To integrate CNN model to Frontend
   - Web3.js      - To connect Smart Contracts with Frontend
   
   
-  &nbsp; &nbsp; &nbsp; &nbsp;Mobile Application is built using React native framework and deployed on Expo. Mobile app has the capability to mint NFT's using NFT.storage. Tokenomics include sale of these NFT's and access to application only for users with NFT initially to support the reward distribution program.
+  &nbsp; &nbsp; &nbsp; &nbsp;Mobile Application is built using React native framework and deployed on Expo. Mobile app has the capability to mint NFT's using NFT.storage. **Tokenomics** include sale of these NFT's and access to application only for users with NFT initially to support the reward distribution program.
 
 # <a name="d"></a> Challenges we ran into
-&nbsp; &nbsp; &nbsp; &nbsp;Initially we thought of deploying this application using Rinkeby test network of Ethereum and it lead to higher gas fee and slower transactions. Then we switched to L2 based solution like Polygon. Though it was easy to switch we encountered difficulties in integrating it with Frontend. After further reading Web3.JS  and Polygon docs we found the solution. Further we realized that as this DApp grows we'll be having lot of data to handle. IPFS came to our rescue. We've used Fleek platform to publish DApp on IPFS. Image classification and other predicting models need Multimedia data to predict what kind of waste and how much of it is deposited. IPFS helped us handle these situations. NFT's minted are stored in IPFS.
+&nbsp; &nbsp; &nbsp; &nbsp;Initially we thought of deploying this application using Rinkeby test network of Ethereum and it lead to higher gas fee and slower transactions. Then we switched to L2 based solution like Polygon. Though it was easy to switch we encountered difficulties in integrating it with Frontend. After further reading Web3.JS  and Polygon docs we found the solution. Further we realized that as this DApp grows we'll be having lot of data to handle. IPFS came to our rescue. We've used Fleek platform to publish DApp on IPFS. Image classification and other predicting models need Multimedia data to predict what kind of waste and how much of it is deposited. IPFS helped us handle these situations. NFT's minted are stored using NFT.storage.
 
 # <a name="e"></a> Accomplishments that we're proud of
 - Multi-chain contract
 - MVP Mobile App
 - Web App deployed in a fast and low fee blockchain network.
-  
+- Utilised NFT.storage for NFT storage.
 ## What we learned
 - To work cohesively even though we're both remote.
 - Manage work load equally even though both of us had different skill sets.
 - Lot of knowledge on CO2 emissions and rates at which it is increasing and sources of it.
 ## What's next for Garbage Goober Reward
 &nbsp; &nbsp; &nbsp; &nbsp;Right now user manually enters weight of waste. Type of waste is classified by uploading a picture of the waste. This is not the right way for production level implementation. Users will take advantage of this easily. We are thinking of using OpenCV to detect and determine type of waste in real time without any human intervention. This cannot be done due to time constraints for the hackathon. As these features will be integrated data plays important role and we will be using OpenCV & IPFS efficiently in upcoming versions.
+
+&nbsp; &nbsp; &nbsp; &nbsp;NFT marketplace will be setup and we'll implement features like access to application only if having NFT, limited NFT items release etc., for generating revenue to distribute rewards. Overall this shall become a circular economy where NFT's can be used for trading and recognition and also helps fund reward distribution programme which brings lot of potential for utility to our NFT and project.
   
 ## Gallery

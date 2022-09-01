@@ -55,17 +55,25 @@ This will be a great and efficient **Learning experience for Users** as they can
   - AI/ML      - To determine the type of waste
   - Blockchain - To distribute rewards
 
-These cover almost all areas of the world without any technological or logistical barriers like access to no computers. Mobile App is thus built to cater people who don't have access to better hardware.
+These cover almost all areas of the world without any technological or logistical barriers like access to no computers. **Mobile App** is thus built to cater people who don't have access to better hardware.
 
 We have started out with a flask app for classifying types of waste. Later we decided to implement a better front end experience and Web3 functionality that would allow user to get paid using Web3. We have used Polygon network which is L2 network based on Ethereum. This blockchain is so energy neutral that most of it is powered through alternate energy resources. Single transaction uses only 1/20th of power used by a LED bulb per minute thus not putting any more burden/polluting the environment.
+
+**Mobile App** is also built which has the ability to capture waste images and identify just like the webapp but with additional feature of **Minting NFT**. Further implementation requires users to first have NFT's to participate in Garbage Goober which can be bought from marketplace similar to the model of Stepn. NFT's are minted based on input and can be sold in marketplace. **NFT.storage** is currently used to store the NFT's minted.
+
 
 Latest technologies like Deep Learning for Waste classification, Blockchain for Reward payout and mobile,web applications ensure the application rewards to only correct waste disposals.
   
 
 # <a name="c"></a> How we built it
 &nbsp; &nbsp; &nbsp; &nbsp;We have built this DApp as Web App. Entire frontend is built using HTML,CSS,JS. Smart contracts are written using Solidity and deployed on Polygon network. Polygon network helps us in Reduced gas fee and faster transactions. Frontend and Smart contracts are connected using Web3.JS. Convoultional Neural Network is used for determining type of waste instantly with just a picture. It has accuracy of 83% at present with dataset of 2,200+ images in IPFS. This entire DApp is published through IPFS using Fleek platform. IPFS helps us in maintaining large sets of Data with more security features like no redundancy.
-  - Flask   - To integrate CNN model to Frontend
-  - Web3.js - To connect Smart Contracts with Frontend
+  - React Native - Mobile App framework
+  - NFT.storage  - To store the minted NFT's
+  - Flask        - To integrate CNN model to Frontend
+  - Web3.js      - To connect Smart Contracts with Frontend
+  
+  
+  &nbsp; &nbsp; &nbsp; &nbsp;Mobile Application is built using React native framework and deployed on Expo. Mobile app has the capability to mint NFT's using NFT.storage. Tokenomics include sale of these NFT's and access to application only for users with NFT initially to support the reward distribution program.
 
 # <a name="d"></a> Challenges we ran into
 &nbsp; &nbsp; &nbsp; &nbsp;Initially we thought of deploying this application using Rinkeby test network of Ethereum and it lead to higher gas fee and slower transactions. Then we switched to L2 based solution like Polygon. Though it was easy to switch we encountered difficulties in integrating it with Frontend. After further reading Web3.JS  and Polygon docs we found the solution. Further we realized that as this DApp grows we'll be having lot of data to handle. IPFS came to our rescue. We've used Fleek platform to publish DApp on IPFS. Image classification and other predicting models need Multimedia data to predict what kind of waste and how much of it is deposited. IPFS helped us handle these situations. NFT's minted are stored in IPFS.
